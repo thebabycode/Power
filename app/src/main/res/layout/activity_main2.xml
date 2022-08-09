@@ -1,45 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
 
-
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:gravity="center"
-            android:text="Powersale"
-            android:textColor="@color/black"
-            android:textSize="30dp"
-            android:textStyle="bold" />
-    </FrameLayout>
-
-
-    <ScrollView
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
 
-        <!--        <LinearLayout-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="wrap_content">-->
-        <!--            <me.biubiubiu.justifytext.library.JustifyTextView-->
-        <!--                android:id="@+id/article"-->
-        <!--                android:layout_width="wrap_content"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:layout_marginLeft="15dp"-->
-        <!--                android:layout_marginTop="55dp"-->
-        <!--                android:layout_marginRight="5dp"-->
-        <!--                android:autoLink="web"-->
-        <!--                android:padding="@dimen/padding_regular"-->
-        <!--                android:text="@string/article_text" />-->
-        <!--        </LinearLayout>-->
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="Powersale"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -52,68 +35,159 @@
                 android:layout_marginTop="45dp"
                 android:text="Oil Paintings"
                 android:textColor="@color/black"
-                android:textSize="15dp"
+                android:textSize="20dp"
                 android:textStyle="bold" />
 
             <HorizontalScrollView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
-
                 <GridLayout
                     android:layout_width="match_parent"
-                    android:layout_height="250dp"
-                    android:layout_marginTop="15dp">
-
+                    android:layout_height="210dp"
+                    android:layout_marginTop="0dp">
                     <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        >
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:background="@drawable/customborder">
 
                         <ImageView
                             android:id="@+id/pt1"
-                            android:layout_width="160dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="180dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="-20dp"
                             android:src="@drawable/pt1" />
+
                         <TextView
-                            android:layout_below="@+id/pt1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_row="0"
-                            android:layout_column="0"
-                            android:textColor="#000000"
-                            android:layout_marginTop="-15dp"
-                            android:gravity="right"
-                            android:text="sample" />
-                        <TextView
                             android:layout_below="@+id/pt1"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="-25dp"
+                            android:gravity="right"
+                            android:text="Painting 1"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="15dp" />
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_row="0"
-                            android:layout_column="0"
-                            android:textColor="#000000"
-                            android:layout_marginTop="-15dp"
-                            android:gravity="right"
+                            android:layout_below="@+id/pt1"
                             android:layout_alignRight="@+id/pt1"
-                            android:text="sample" />
+                            android:layout_marginTop="-25dp"
+                            android:layout_marginRight="5dp"
+                            android:gravity="right"
+                            android:text="$ 5.6"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
                     </RelativeLayout>
 
-                    <ImageView
-                        android:id="@+id/pt2"
-                        android:layout_width="160dp"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/pt2" />
-
-                    <ImageView
-                        android:id="@+id/pt3"
-                        android:layout_width="160dp"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/pt3" />
-
-                    <ImageView
-                        android:id="@+id/pt4"
+                    <RelativeLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/pt4" />
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:background="@drawable/customborder">
+
+                        <ImageView
+                            android:id="@+id/pt2"
+                            android:layout_width="180dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="-20dp"
+                            android:src="@drawable/pt2" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pt2"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="-25dp"
+                            android:gravity="right"
+                            android:text="Painting 2"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="15dp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pt2"
+                            android:layout_alignRight="@+id/pt2"
+                            android:layout_marginTop="-25dp"
+                            android:layout_marginRight="5dp"
+                            android:gravity="right"
+                            android:text="$ 5.0"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="15dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp">
+
+                        <ImageView
+                            android:id="@+id/pt3"
+                            android:layout_width="160dp"
+                            android:layout_height="200dp"
+                            android:src="@drawable/pt3" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pt3"
+                            android:layout_marginTop="-15dp"
+                            android:gravity="right"
+                            android:text="Painting 2"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:textColor="#000000" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_row="0"
+                            android:layout_column="0"
+                            android:layout_below="@+id/pt3"
+                            android:layout_alignRight="@+id/pt3"
+                            android:layout_marginTop="-15dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="right"
+                            android:text="$ 7.6"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp">
+                        <ImageView
+                            android:id="@+id/pt4"
+                            android:layout_width="160dp"
+                            android:layout_height="200dp"
+                            android:src="@drawable/pt4" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pt4"
+                            android:layout_marginTop="-15dp"
+                            android:gravity="right"
+                            android:text="Painting 4"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:textColor="#000000" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pt4"
+                            android:layout_alignRight="@+id/pt4"
+                            android:layout_marginTop="-15dp"
+                            android:layout_marginRight="5dp"
+                            android:gravity="right"
+                            android:text="$ 3.6"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
                 </GridLayout>
             </HorizontalScrollView>
 
@@ -133,7 +207,7 @@
 
                 <GridLayout
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="210dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
@@ -225,14 +299,71 @@
                         android:layout_height="wrap_content"
                         android:layout_row="0"
                         android:layout_column="0"
-                        android:text="Helloooooooooooooooooo" />
-
-
+                        android:text="" />
                 </GridLayout>
             </HorizontalScrollView>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Canvas Paintings"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="15dp">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"></LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/pt13"
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/pt13" />
+
+                    <ImageView
+                        android:id="@+id/pt14"
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/pt14" />
+
+                    <ImageView
+                        android:id="@+id/pt15"
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/pt15" />
+
+                    <ImageView
+                        android:id="@+id/pt16"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/pt16" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:text="dum dum" />
+                </GridLayout>
+            </HorizontalScrollView>
         </LinearLayout>
 
-    </ScrollView>
-
-</RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
