@@ -243,17 +243,19 @@
                         android:layout_marginLeft="10dp"
                         android:background="@drawable/customborder">
 
-                        <ImageView
-                            android:id="@+id/snst1"
+                        <ImageButton
+                            android:id="@+id/snst1_btn"
                             android:layout_width="200dp"
                             android:layout_height="210dp"
                             android:layout_marginTop="-25dp"
+                            android:background="@color/white"
+                            android:scaleType="fitCenter"
                             android:src="@drawable/snst1" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_below="@+id/snst1"
+                            android:layout_below="@+id/snst1_btn"
                             android:layout_marginLeft="5dp"
                             android:layout_marginTop="-20dp"
                             android:gravity="right"
@@ -265,8 +267,8 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_below="@+id/snst1"
-                            android:layout_alignRight="@+id/snst1"
+                            android:layout_below="@+id/snst1_btn"
+                            android:layout_alignRight="@+id/snst1_btn"
                             android:layout_marginTop="-20dp"
                             android:layout_marginRight="5dp"
                             android:gravity="right"
