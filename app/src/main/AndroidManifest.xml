@@ -29,6 +29,9 @@
         <activity
             android:name=".activity_sunset_mainpage"
             android:exported="false" />
+        <activity
+            android:name=".activity_snst1_page"
+            android:exported="false" />
     </application>
 
 </manifest>
