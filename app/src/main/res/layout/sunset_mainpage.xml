@@ -1,15 +1,335 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity_sunset_mainpage">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="This is Sunset Mainpage"
-        android:textColor="@color/black"
-        tools:ignore="MissingConstraints" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/sunsetmainpage_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sunset Paintings"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            android:layout_marginTop="3dp"
+            android:textAlignment="center" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rowCount="2"
+            android:columnCount="2"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentBottom="@+id/sunsetmainpage_heading">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/customborder">
+                <ImageView
+                    android:id="@+id/pt1"
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="-30dp"
+                    android:src="@drawable/pt1" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/pt1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="-20dp"
+                    android:gravity="left"
+                    android:text="Painting 1"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pt1"
+                    android:layout_alignRight="@+id/pt1"
+                    android:layout_marginTop="-20dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="right"
+                    android:text="$ 5.6"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/customborder">
+
+                <ImageView
+                    android:id="@+id/pt2"
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="-30dp"
+                    android:src="@drawable/pt2" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pt2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="-20dp"
+                    android:gravity="right"
+                    android:text="Painting 2"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pt2"
+                    android:layout_alignRight="@+id/pt2"
+                    android:layout_marginTop="-20dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="right"
+                    android:text="$ 5.0"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/customborder">
+
+                <ImageView
+                    android:id="@+id/pt3"
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="-30dp"
+                    android:src="@drawable/pt3" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pt3"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="-20dp"
+                    android:gravity="right"
+                    android:text="Painting 3"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pt3"
+                    android:layout_alignRight="@+id/pt3"
+                    android:layout_marginTop="-20dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="right"
+                    android:text="$ 5.0"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/customborder">
+
+                <ImageView
+                    android:id="@+id/pt4"
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="-30dp"
+                    android:src="@drawable/pt4" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pt4"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="-20dp"
+                    android:gravity="right"
+                    android:text="Painting 4"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pt4"
+                    android:layout_alignRight="@+id/pt4"
+                    android:layout_marginTop="-20dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="right"
+                    android:text="$ 5.0"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/customborder">
+
+                <ImageView
+                    android:id="@+id/snst5"
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="-30dp"
+                    android:src="@drawable/snst5" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/snst5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="-20dp"
+                    android:gravity="right"
+                    android:text="Painting 5"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/snst5"
+                    android:layout_alignRight="@+id/snst5"
+                    android:layout_marginTop="-20dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="right"
+                    android:text="$ 3.0"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/customborder">
+
+                <ImageView
+                    android:id="@+id/snst6"
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="-30dp"
+                    android:src="@drawable/snst6" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/snst6"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="-20dp"
+                    android:gravity="right"
+                    android:text="Painting 6"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/snst6"
+                    android:layout_alignRight="@+id/snst6"
+                    android:layout_marginTop="-20dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="right"
+                    android:text="$ 3.0"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/customborder">
+
+                <ImageView
+                    android:id="@+id/snst7"
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="-30dp"
+                    android:src="@drawable/snst7" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/snst7"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="-20dp"
+                    android:gravity="right"
+                    android:text="Painting 7"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/snst7"
+                    android:layout_alignRight="@+id/snst7"
+                    android:layout_marginTop="-20dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="right"
+                    android:text="$ 3.0"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/customborder">
+
+                <ImageView
+                    android:id="@+id/snst8"
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="-30dp"
+                    android:src="@drawable/snst8" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/snst8"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="-20dp"
+                    android:gravity="right"
+                    android:text="Painting 8"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/snst8"
+                    android:layout_alignRight="@+id/snst8"
+                    android:layout_marginTop="-20dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="right"
+                    android:text="$ 3.0"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </GridLayout>
+    </RelativeLayout>
+</ScrollView>
