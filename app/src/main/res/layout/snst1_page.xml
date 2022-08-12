@@ -37,7 +37,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="0dp"
             android:background="@drawable/customupperroundborder"
             android:orientation="vertical"
@@ -82,13 +82,37 @@
                 android:textSize="23dp" />
 
             <Button
+                android:id="@+id/sharebtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="55dp"
+                android:layout_marginTop="10dp"
                 android:background="@drawable/roundbutton2"
                 android:minHeight="45dp"
-                android:layout_marginLeft="110dp"
+                android:layout_marginLeft="0dp"
+                android:text="  Share via Mail  "
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/roundbutton2"
+                android:minHeight="45dp"
+                android:layout_marginLeft="0dp"
                 android:text="   Bid this Product   "
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/location_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundbutton2"
+                android:minHeight="45dp"
+                android:layout_marginLeft="0dp"
+                android:text="  View Pickup Location  "
                 android:textColor="@color/white"
                 android:textStyle="bold" />
 

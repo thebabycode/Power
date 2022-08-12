@@ -9,11 +9,13 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.Typeface;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.GridView;
@@ -47,25 +49,11 @@ public class MainActivity extends AppCompatActivity {
                 String name = username.getText().toString();
                 Toast toast = new Toast(getApplicationContext());
                 toast.setGravity(Gravity.TOP, 0, 30);
-                // view.setBackgroundResource(R.drawable.toast_background_color);
                 toast.makeText(MainActivity.this, "Welcome " + username.getText() + " to Powersale!", toast.LENGTH_LONG).show();
 
-                // Toast toast = Toast.makeText(context, text, duration);
-
-//                Toast toast = new Toast(getApplicationContext());
-//                toast.setGravity(Gravity.TOP, 0, 30);
-//                TextView tv =new TextView(getApplicationContext());
-//                tv.setBackgroundColor(Color.GREEN);
-//                tv.setTextColor(Color.RED);
-//
-//                Typeface t= Typeface.create("serif",Typeface.BOLD);
-//                tv.setTypeface(t);
-//                tv.setPadding(10,10,10,10);
-//                tv.setText("Product Added succesfully");
-//                toast.setView(tv);
-//                toast.show();
             }
         });
+
         Button mainpg_btn = findViewById(R.id.nextpagebutton);
         mainpg_btn.setOnClickListener(new View.OnClickListener()
         {
@@ -75,6 +63,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+         ImageButton googlelogo_btn = findViewById(R.id.googlelogo_btn);
+         googlelogo_btn.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
+                 Uri webpage= Uri.parse("https://www.google.com/");
+                 Intent web=new Intent(Intent.ACTION_VIEW,webpage);
+                 startActivity(web);
+             }
+         });
 
     }
     @Override

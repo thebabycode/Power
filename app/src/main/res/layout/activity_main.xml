@@ -138,13 +138,16 @@
             android:layout_marginTop="15dp"
             android:layout_gravity="center">
 
-            <ImageView
-                android:id="@+id/googlelogo"
+            <ImageButton
+                android:id="@+id/googlelogo_btn"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="90dp"
                 android:src="@drawable/googlelogo"
                 tools:ignore="MissingConstraints"
+                android:scaleType="fitCenter"
+                android:background="@color/white"
+                android:minHeight="50dp"
                 android:layout_column="0"/>
 
             <ImageView
