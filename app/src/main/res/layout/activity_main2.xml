@@ -6,33 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:gravity="center"
                 android:text="Powersale"
+                android:textColor="@color/white"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:background="@drawable/roundbutton3"/>
+            <TextView
+                android:id="@+id/gdmrnname"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity=""
+                android:text=""
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
                 android:textColor="@color/black"
                 android:textSize="30dp"
                 android:textStyle="bold" />
-        </FrameLayout>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:layout_marginTop="45dp"
+                android:layout_marginTop="0dp"
                 android:text="Oil Paintings"
                 android:textColor="@color/black"
                 android:textSize="20dp"
@@ -792,5 +806,5 @@
             </HorizontalScrollView>
         </LinearLayout>
 
-    </RelativeLayout>
+    </LinearLayout>
 </ScrollView>

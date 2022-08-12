@@ -60,6 +60,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, MainActivity2.class);
+                String name = username.getText().toString();
+                String str = "Good Morning ";
+                i.putExtra("msg",str+name+" !");
                 startActivity(i);
             }
         });
