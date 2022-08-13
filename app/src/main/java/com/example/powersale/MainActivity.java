@@ -2,6 +2,8 @@ package com.example.powersale;
 
 //package com.example.activitylifecycle;
 
+import static android.text.TextUtils.isEmpty;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -20,19 +22,21 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.GridView;
 
+import java.util.Objects;
+
 public class MainActivity extends AppCompatActivity {
-    private EditText username;
+    private EditText username_txt;
     private Button btn;
     TextView appname;
-    EditText userpswd;
+    private EditText userpswd_txt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Toast.makeText(this, "Process Created", Toast.LENGTH_SHORT).show();
         setContentView(R.layout.activity_main);
-        username = (EditText)findViewById(R.id.username);
-        userpswd = (EditText)findViewById(R.id.userpswd);
+        username_txt = (EditText)findViewById(R.id.username);
+        userpswd_txt = (EditText)findViewById(R.id.userpswd);
         appname=(TextView)findViewById(R.id.appname);
         addListenerOnButton();
 
@@ -46,38 +50,76 @@ public class MainActivity extends AppCompatActivity {
             @SuppressLint("ResourceAsColor")
             @Override
             public void onClick(View v) {
-                String name = username.getText().toString();
-                Toast toast = new Toast(getApplicationContext());
-                toast.setGravity(Gravity.TOP, 0, 30);
-                toast.makeText(MainActivity.this, "Welcome " + username.getText() + " to Powersale!", toast.LENGTH_LONG).show();
+                String name = username_txt.getText().toString();
+                String pswd = userpswd_txt.getText().toString();
+                boolean isValid = true;
+                if (isEmpty(name)) {
+                    username_txt.setError("You must enter username to login!");
+                    isValid = false;
+                }
+                if (isEmpty(pswd)) {
+                    userpswd_txt.setError("You must enter password to login!");
+                    isValid = false;
+                }
 
+                if(isValid) {
+                    if (name.equals(pswd)) {
+                        Intent i = new Intent(MainActivity.this, MainActivity2.class);
+                        i.putExtra("msg", "Good Morning " + name + "!");
+                        startActivity(i);
+                    } else {
+                        Toast toast = new Toast(getApplicationContext());
+                        toast.setGravity(Gravity.TOP, 0, 30);
+                        toast.makeText(MainActivity.this, "Incorrect Username/Password! name=" + name + "pswd=" + pswd, toast.LENGTH_SHORT).show();
+                    }
+                }
             }
         });
 
-        Button mainpg_btn = findViewById(R.id.nextpagebutton);
-        mainpg_btn.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, MainActivity2.class);
-                String name = username.getText().toString();
-                String str = "Good Morning ";
-                i.putExtra("msg",str+name+" !");
-                startActivity(i);
-            }
-        });
+        ImageButton googlelogo_btn = findViewById(R.id.googlelogo_btn);
+        ImageButton twitterlogo_btn = findViewById(R.id.twitterlogo_btn);
+        ImageButton instagramlogo_btn = findViewById(R.id.instagramlogo_btn);
+        ImageButton facebooklogo_btn = findViewById(R.id.facebooklogo_btn);
 
-         ImageButton googlelogo_btn = findViewById(R.id.googlelogo_btn);
-         googlelogo_btn.setOnClickListener(new View.OnClickListener() {
+        googlelogo_btn.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View view) {
-                 Uri webpage= Uri.parse("https://www.google.com/");
+                 Uri webpage= Uri.parse("https://www.github.com/thebabycode");
                  Intent web=new Intent(Intent.ACTION_VIEW,webpage);
                  startActivity(web);
              }
-         });
+        });
+
+        twitterlogo_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri webpage= Uri.parse("https://www.twitter.com/");
+                Intent web=new Intent(Intent.ACTION_VIEW,webpage);
+                startActivity(web);
+            }
+        });
+
+        instagramlogo_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri webpage= Uri.parse("https://www.instagram.com/johnsmemana");
+                Intent web=new Intent(Intent.ACTION_VIEW,webpage);
+                startActivity(web);
+            }
+        });
+
+        facebooklogo_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri webpage= Uri.parse("https://www.facebook.com/");
+                Intent web=new Intent(Intent.ACTION_VIEW,webpage);
+                startActivity(web);
+            }
+        });
 
     }
+
+
     @Override
     protected void onStart() {
         super.onStart();
