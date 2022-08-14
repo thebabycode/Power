@@ -40,6 +40,18 @@ public class activity_snst1_page extends AppCompatActivity {
                     startActivity(i);
                 }
                 catch(ActivityNotFoundException e){
+                }
+            }
+        });
+        Button more_details_btn = findViewById(R.id.more_details_btn);
+        more_details_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(activity_snst1_page.this, moredetails_webview.class);
+                try{
+                    startActivity(i);
+                }
+                catch(ActivityNotFoundException e){
 
                 }
             }

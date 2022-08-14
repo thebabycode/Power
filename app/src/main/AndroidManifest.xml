@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.powersale">
 
+    <!--    for webview we need internet access -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -31,6 +34,9 @@
             android:exported="false" />
         <activity
             android:name=".activity_snst1_page"
+            android:exported="false" />
+        <activity
+            android:name=".moredetails_webview"
             android:exported="false" />
     </application>
 
