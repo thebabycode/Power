@@ -15,8 +15,8 @@
         android:layout_marginTop="20dp"/>
 
     <ImageView
-        android:layout_width="204dp"
-        android:layout_height="338dp"
+        android:layout_width="match_parent"
+        android:layout_height="392dp"
         android:layout_centerHorizontal="true"
         android:padding="0dp"
         android:src="@drawable/profileimage" />
@@ -25,34 +25,36 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="300dp"
-        android:paddingLeft="20dp"
+        android:background="@drawable/customupperroundborder"
         android:orientation="vertical"
-        android:background="@drawable/customupperroundborder">
+        android:paddingLeft="20dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:text="Name : Johns Baby"
-            android:textSize="25dp"
             android:textColor="@color/black"
-            android:textStyle="bold"/>
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:text="Email  : baby.johns@gmail.com"
-            android:textSize="25dp"
-            android:layout_marginTop="25dp"
             android:textColor="@color/black"
-            android:textStyle="bold"/>
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Mobile : +91 8281760314"
-            android:textSize="25dp"
             android:layout_marginTop="25dp"
+            android:text="Mobile : +91 8281760314"
             android:textColor="@color/black"
-            android:textStyle="bold"/>
+            android:textSize="25dp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -62,11 +64,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Gender :"
                 android:gravity="center_vertical"
+                android:text="Gender :"
                 android:textColor="@color/black"
-                android:textStyle="bold"
-                android:textSize="25dp"/>
+                android:textSize="25dp"
+                android:textStyle="bold" />
 
             <RadioGroup
                 android:layout_width="wrap_content"
@@ -76,37 +78,42 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Male"
+                    android:layout_margin="10dp"
                     android:background="@drawable/radio_selector"
-                    android:textColor="@drawable/radio_textcolor"
                     android:elevation="4dp"
-                    android:textSize="20dp"
-                    android:padding="8dp"
-                    android:layout_margin="10dp"/>
+                    android:padding="10dp"
+                    android:text="Male"
+                    android:textStyle="bold"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/radio_textcolor"
+                    android:textSize="20dp" />
+
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Female"
+                    android:layout_margin="10dp"
                     android:background="@drawable/radio_selector"
-                    android:textColor="@drawable/radio_textcolor"
                     android:elevation="4dp"
-                    android:textSize="20dp"
                     android:padding="8dp"
-                    android:layout_margin="10dp"/>
-<!--                <RadioButton-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="Other"-->
-<!--                    android:background="@drawable/radio_selector"-->
-<!--                    android:textColor="@drawable/radio_textcolor"-->
-<!--                    android:elevation="4dp"-->
-<!--                    android:padding="13dp"-->
-<!--                    android:layout_margin="10dp"/>-->
+                    android:text="Female"
+                    android:textStyle="bold"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/radio_textcolor"
+                    android:textSize="20dp" />
             </RadioGroup>
         </LinearLayout>
 
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            -->
+<!--            <AutoCompleteTextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content" />-->
+<!--            -->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
     </LinearLayout>
-
-
 
 </RelativeLayout>
