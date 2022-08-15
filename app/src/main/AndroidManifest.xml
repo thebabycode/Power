@@ -38,6 +38,9 @@
         <activity
             android:name=".moredetails_webview"
             android:exported="false" />
+        <activity
+            android:name=".profilepage"
+            android:exported="false" />
     </application>
 
 </manifest>

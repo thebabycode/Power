@@ -1,810 +1,849 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:gravity="center"
-                android:text="Powersale"
-                android:textColor="@color/white"
-                android:textSize="35dp"
-                android:textStyle="bold"
-                android:background="@drawable/roundbutton3"/>
-            <TextView
-                android:id="@+id/gdmrnname"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:gravity=""
-                android:text=""
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="10dp"
-                android:textColor="@color/black"
-                android:textSize="30dp"
-                android:textStyle="bold" />
-        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="Powersale"
+                    android:textColor="@color/white"
+                    android:textSize="35dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/roundbutton3"/>
+                <TextView
+                    android:id="@+id/gdmrnname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity=""
+                    android:text=""
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
-        <LinearLayout
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="0dp"
+                    android:text="Oil Paintings"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp"
+                        android:layout_marginTop="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/customborder">
+
+                            <ImageView
+                                android:id="@+id/pt1"
+                                android:layout_width="200dp"
+                                android:layout_height="220dp"
+                                android:layout_marginTop="-20dp"
+                                android:src="@drawable/pt1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/pt1"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="-20dp"
+                                android:gravity="right"
+                                android:text="Painting 1"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/pt1"
+                                android:layout_alignRight="@+id/pt1"
+                                android:layout_marginTop="-20dp"
+                                android:layout_marginRight="5dp"
+                                android:gravity="right"
+                                android:text="$ 5.6"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/customborder">
+
+                            <ImageView
+                                android:id="@+id/pt2"
+                                android:layout_width="200dp"
+                                android:layout_height="220dp"
+                                android:layout_marginTop="-20dp"
+                                android:src="@drawable/pt2" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/pt2"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="-20dp"
+                                android:gravity="right"
+                                android:text="Painting 2"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/pt2"
+                                android:layout_alignRight="@+id/pt2"
+                                android:layout_marginTop="-20dp"
+                                android:layout_marginRight="5dp"
+                                android:gravity="right"
+                                android:text="$ 5.0"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/customborder">
+
+                            <ImageView
+                                android:id="@+id/pt3"
+                                android:layout_width="200dp"
+                                android:layout_height="220dp"
+                                android:layout_marginTop="-20dp"
+                                android:src="@drawable/pt3" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/pt3"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="-20dp"
+                                android:gravity="right"
+                                android:text="Painting 3"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/pt3"
+                                android:layout_alignRight="@+id/pt3"
+                                android:layout_marginTop="-20dp"
+                                android:layout_marginRight="5dp"
+                                android:gravity="right"
+                                android:text="$ 5.0"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/customborder">
+
+                            <ImageView
+                                android:id="@+id/pt4"
+                                android:layout_width="200dp"
+                                android:layout_height="220dp"
+                                android:layout_marginTop="-20dp"
+                                android:src="@drawable/pt4" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/pt4"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="-20dp"
+                                android:gravity="right"
+                                android:text="Painting 4"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/pt4"
+                                android:layout_alignRight="@+id/pt4"
+                                android:layout_marginTop="-20dp"
+                                android:layout_marginRight="5dp"
+                                android:gravity="right"
+                                android:text="$ 5.0"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                        <Button
+                            android:id="@+id/oilpaintingsmainpage_btn"
+                            android:layout_row="0"
+                            android:layout_column="4"
+                            android:layout_width="60dp"
+                            android:layout_height="190dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/roundbutton"
+                            android:layout_marginLeft="7dp"
+                            android:text=">>"
+                            android:textColor="@color/white"
+                            android:textSize="35dp"
+                            android:textStyle="normal" />
+                    </GridLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Sunsets"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp"
+                        android:layout_marginTop="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/customborder">
+
+                            <ImageButton
+                                android:id="@+id/snst1_btn"
+                                android:layout_width="200dp"
+                                android:layout_height="210dp"
+                                android:layout_marginTop="-25dp"
+                                android:background="@color/white"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/snst1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/snst1_btn"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="-20dp"
+                                android:gravity="right"
+                                android:text="Painting 5"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/snst1_btn"
+                                android:layout_alignRight="@+id/snst1_btn"
+                                android:layout_marginTop="-20dp"
+                                android:layout_marginRight="5dp"
+                                android:gravity="right"
+                                android:text="$ 5.6"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/customborder">
+
+                            <ImageView
+                                android:id="@+id/snst2"
+                                android:layout_width="200dp"
+                                android:layout_height="210dp"
+                                android:layout_marginTop="-25dp"
+                                android:src="@drawable/snst2" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/snst2"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="-20dp"
+                                android:gravity="right"
+                                android:text="Painting 6"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/snst2"
+                                android:layout_alignRight="@+id/snst2"
+                                android:layout_marginTop="-20dp"
+                                android:layout_marginRight="5dp"
+                                android:gravity="right"
+                                android:text="$ 5.6"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/customborder">
+
+                            <ImageView
+                                android:id="@+id/snst3"
+                                android:layout_width="200dp"
+                                android:layout_height="210dp"
+                                android:layout_marginTop="-25dp"
+                                android:src="@drawable/snst3" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/snst3"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="-20dp"
+                                android:gravity="right"
+                                android:text="Painting 7"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/snst3"
+                                android:layout_alignRight="@+id/snst3"
+                                android:layout_marginTop="-20dp"
+                                android:layout_marginRight="5dp"
+                                android:gravity="right"
+                                android:text="$ 5.6"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/customborder">
+
+                            <ImageView
+                                android:id="@+id/snst4"
+                                android:layout_width="200dp"
+                                android:layout_height="210dp"
+                                android:layout_marginTop="-25dp"
+                                android:src="@drawable/snst4" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/snst4"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="-20dp"
+                                android:gravity="right"
+                                android:text="Painting 8"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/snst4"
+                                android:layout_alignRight="@+id/snst4"
+                                android:layout_marginTop="-20dp"
+                                android:layout_marginRight="5dp"
+                                android:gravity="right"
+                                android:text="$ 12"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/sunsetmainpage_btn"
+                            android:layout_row="0"
+                            android:layout_column="4"
+                            android:layout_width="60dp"
+                            android:layout_height="190dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/roundbutton"
+                            android:layout_marginLeft="7dp"
+                            android:text=">>"
+                            android:textColor="@color/white"
+                            android:textSize="35dp"
+                            android:textStyle="normal" />
+                    </GridLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Digital Paintings"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/customborder">
+
+                            <ImageView
+                                android:id="@+id/pt9"
+                                android:layout_width="200dp"
+                                android:layout_height="210dp"
+                                android:layout_marginTop="-25dp"
+                                android:src="@drawable/pt9" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/pt9"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="-20dp"
+                                android:gravity="right"
+                                android:text="Painting 9"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/pt9"
+                                android:layout_alignRight="@+id/pt9"
+                                android:layout_marginTop="-20dp"
+                                android:layout_marginRight="5dp"
+                                android:gravity="right"
+                                android:text="$ 9.6"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/customborder">
+
+                            <ImageView
+                                android:id="@+id/pt10"
+                                android:layout_width="200dp"
+                                android:layout_height="210dp"
+                                android:layout_marginTop="-25dp"
+                                android:src="@drawable/pt10" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/pt10"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="-20dp"
+                                android:gravity="right"
+                                android:text="Painting 10"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/pt10"
+                                android:layout_alignRight="@+id/pt10"
+                                android:layout_marginTop="-20dp"
+                                android:layout_marginRight="5dp"
+                                android:gravity="right"
+                                android:text="$ 10.6"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/customborder">
+
+                            <ImageView
+                                android:id="@+id/pt11"
+                                android:layout_width="200dp"
+                                android:layout_height="210dp"
+                                android:layout_marginTop="-25dp"
+                                android:src="@drawable/pt11" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/pt11"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="-20dp"
+                                android:gravity="right"
+                                android:text="Painting 11"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/pt11"
+                                android:layout_alignRight="@+id/pt11"
+                                android:layout_marginTop="-20dp"
+                                android:layout_marginRight="5dp"
+                                android:gravity="right"
+                                android:text="$ 11.3"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/customborder">
+
+                            <ImageView
+                                android:id="@+id/pt12"
+                                android:layout_width="200dp"
+                                android:layout_height="210dp"
+                                android:layout_marginTop="-25dp"
+                                android:src="@drawable/pt12" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/pt12"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="-20dp"
+                                android:gravity="right"
+                                android:text="Painting 12"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/pt12"
+                                android:layout_alignRight="@+id/pt12"
+                                android:layout_marginTop="-20dp"
+                                android:layout_marginRight="5dp"
+                                android:gravity="right"
+                                android:text="$ 5.6"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                        <Button
+                            android:id="@+id/digitalpaintingsmainpage_btn"
+                            android:layout_row="0"
+                            android:layout_column="4"
+                            android:layout_width="60dp"
+                            android:layout_height="140dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/roundbutton"
+                            android:layout_marginLeft="7dp"
+                            android:text=">>"
+                            android:textColor="@color/white"
+                            android:textSize="35dp"
+                            android:textStyle="normal" />
+                    </GridLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Canvas Paintings"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/customborder">
+
+                            <ImageView
+                                android:id="@+id/pt13"
+                                android:layout_width="200dp"
+                                android:layout_height="210dp"
+                                android:layout_marginTop="-25dp"
+                                android:src="@drawable/pt13" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/pt13"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="-20dp"
+                                android:gravity="right"
+                                android:text="Painting 13"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/pt13"
+                                android:layout_alignRight="@+id/pt13"
+                                android:layout_marginTop="-20dp"
+                                android:layout_marginRight="5dp"
+                                android:gravity="right"
+                                android:text="$ 11.3"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/customborder">
+
+                            <ImageView
+                                android:id="@+id/pt14"
+                                android:layout_width="200dp"
+                                android:layout_height="210dp"
+                                android:layout_marginTop="-25dp"
+                                android:src="@drawable/pt14" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/pt14"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="-20dp"
+                                android:gravity="right"
+                                android:text="Painting 14"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/pt14"
+                                android:layout_alignRight="@+id/pt14"
+                                android:layout_marginTop="-20dp"
+                                android:layout_marginRight="5dp"
+                                android:gravity="right"
+                                android:text="$ 14.3"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/customborder">
+
+                            <ImageView
+                                android:id="@+id/pt15"
+                                android:layout_width="200dp"
+                                android:layout_height="210dp"
+                                android:layout_marginTop="-25dp"
+                                android:src="@drawable/pt15" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/pt15"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="-20dp"
+                                android:gravity="right"
+                                android:text="Painting 15"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/pt15"
+                                android:layout_alignRight="@+id/pt15"
+                                android:layout_marginTop="-20dp"
+                                android:layout_marginRight="5dp"
+                                android:gravity="right"
+                                android:text="$ 6.8"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/customborder">
+
+                            <ImageView
+                                android:id="@+id/pt16"
+                                android:layout_width="200dp"
+                                android:layout_height="210dp"
+                                android:layout_marginTop="-25dp"
+                                android:src="@drawable/pt16" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/pt16"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="-20dp"
+                                android:gravity="right"
+                                android:text="Painting 16"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/pt16"
+                                android:layout_alignRight="@+id/pt16"
+                                android:layout_marginTop="-20dp"
+                                android:layout_marginRight="5dp"
+                                android:gravity="right"
+                                android:text="$ 11.3"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                        <Button
+                            android:id="@+id/canvaspaintingsmainpage_btn"
+                            android:layout_row="0"
+                            android:layout_column="4"
+                            android:layout_width="60dp"
+                            android:layout_height="180dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/roundbutton"
+                            android:layout_marginLeft="7dp"
+                            android:text=">>"
+                            android:textColor="@color/white"
+                            android:textSize="35dp"
+                            android:textStyle="normal" />
+                    </GridLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true">
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="20dp">
+            android:layout_margin="18dp"
+            app:fab_addButtonColorNormal="@color/black"
+            app:fab_addButtonColorPressed="@color/black"
+            app:fab_addButtonSize="normal"
+            app:fab_expandDirection="left"
+            app:fab_labelsPosition="left" >
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="0dp"
-                android:text="Oil Paintings"
-                android:textColor="@color/black"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-
-            <HorizontalScrollView
+            <com.getbase.floatingactionbutton.FloatingActionButton
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <GridLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="210dp"
-                    android:layout_marginTop="5dp">
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:background="@drawable/customborder">
-
-                        <ImageView
-                            android:id="@+id/pt1"
-                            android:layout_width="200dp"
-                            android:layout_height="220dp"
-                            android:layout_marginTop="-20dp"
-                            android:src="@drawable/pt1" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/pt1"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginTop="-20dp"
-                            android:gravity="right"
-                            android:text="Painting 1"
-                            android:textColor="#000000"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/pt1"
-                            android:layout_alignRight="@+id/pt1"
-                            android:layout_marginTop="-20dp"
-                            android:layout_marginRight="5dp"
-                            android:gravity="right"
-                            android:text="$ 5.6"
-                            android:textColor="#000000"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:background="@drawable/customborder">
-
-                        <ImageView
-                            android:id="@+id/pt2"
-                            android:layout_width="200dp"
-                            android:layout_height="220dp"
-                            android:layout_marginTop="-20dp"
-                            android:src="@drawable/pt2" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/pt2"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginTop="-20dp"
-                            android:gravity="right"
-                            android:text="Painting 2"
-                            android:textColor="#000000"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/pt2"
-                            android:layout_alignRight="@+id/pt2"
-                            android:layout_marginTop="-20dp"
-                            android:layout_marginRight="5dp"
-                            android:gravity="right"
-                            android:text="$ 5.0"
-                            android:textColor="#000000"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:background="@drawable/customborder">
-
-                        <ImageView
-                            android:id="@+id/pt3"
-                            android:layout_width="200dp"
-                            android:layout_height="220dp"
-                            android:layout_marginTop="-20dp"
-                            android:src="@drawable/pt3" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/pt3"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginTop="-20dp"
-                            android:gravity="right"
-                            android:text="Painting 3"
-                            android:textColor="#000000"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/pt3"
-                            android:layout_alignRight="@+id/pt3"
-                            android:layout_marginTop="-20dp"
-                            android:layout_marginRight="5dp"
-                            android:gravity="right"
-                            android:text="$ 5.0"
-                            android:textColor="#000000"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:background="@drawable/customborder">
-
-                        <ImageView
-                            android:id="@+id/pt4"
-                            android:layout_width="200dp"
-                            android:layout_height="220dp"
-                            android:layout_marginTop="-20dp"
-                            android:src="@drawable/pt4" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/pt4"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginTop="-20dp"
-                            android:gravity="right"
-                            android:text="Painting 4"
-                            android:textColor="#000000"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/pt4"
-                            android:layout_alignRight="@+id/pt4"
-                            android:layout_marginTop="-20dp"
-                            android:layout_marginRight="5dp"
-                            android:gravity="right"
-                            android:text="$ 5.0"
-                            android:textColor="#000000"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-                    </RelativeLayout>
-                    <Button
-                        android:id="@+id/oilpaintingsmainpage_btn"
-                        android:layout_row="0"
-                        android:layout_column="4"
-                        android:layout_width="60dp"
-                        android:layout_height="190dp"
-                        android:layout_gravity="center_vertical"
-                        android:background="@drawable/roundbutton"
-                        android:layout_marginLeft="7dp"
-                        android:text=">>"
-                        android:textColor="@color/white"
-                        android:textSize="35dp"
-                        android:textStyle="normal" />
-                </GridLayout>
-            </HorizontalScrollView>
-
-            <TextView
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="15dp"
-                android:text="Sunsets"
-                android:textColor="@color/black"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-
-            <HorizontalScrollView
+                app:fab_colorNormal="@color/black"
+                app:fab_colorPressed="@color/black"
+                app:fab_size="normal"
+                app:fab_icon="@drawable/ic_review"
+                app:fab_title="Fab Button1" />
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/profile_btn"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <GridLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="210dp"
-                    android:layout_marginTop="5dp">
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:background="@drawable/customborder">
-
-                        <ImageButton
-                            android:id="@+id/snst1_btn"
-                            android:layout_width="200dp"
-                            android:layout_height="210dp"
-                            android:layout_marginTop="-25dp"
-                            android:background="@color/white"
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/snst1" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/snst1_btn"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginTop="-20dp"
-                            android:gravity="right"
-                            android:text="Painting 5"
-                            android:textColor="#000000"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/snst1_btn"
-                            android:layout_alignRight="@+id/snst1_btn"
-                            android:layout_marginTop="-20dp"
-                            android:layout_marginRight="5dp"
-                            android:gravity="right"
-                            android:text="$ 5.6"
-                            android:textColor="#000000"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:background="@drawable/customborder">
-
-                        <ImageView
-                            android:id="@+id/snst2"
-                            android:layout_width="200dp"
-                            android:layout_height="210dp"
-                            android:layout_marginTop="-25dp"
-                            android:src="@drawable/snst2" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/snst2"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginTop="-20dp"
-                            android:gravity="right"
-                            android:text="Painting 6"
-                            android:textColor="#000000"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/snst2"
-                            android:layout_alignRight="@+id/snst2"
-                            android:layout_marginTop="-20dp"
-                            android:layout_marginRight="5dp"
-                            android:gravity="right"
-                            android:text="$ 5.6"
-                            android:textColor="#000000"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:background="@drawable/customborder">
-
-                        <ImageView
-                            android:id="@+id/snst3"
-                            android:layout_width="200dp"
-                            android:layout_height="210dp"
-                            android:layout_marginTop="-25dp"
-                            android:src="@drawable/snst3" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/snst3"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginTop="-20dp"
-                            android:gravity="right"
-                            android:text="Painting 7"
-                            android:textColor="#000000"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/snst3"
-                            android:layout_alignRight="@+id/snst3"
-                            android:layout_marginTop="-20dp"
-                            android:layout_marginRight="5dp"
-                            android:gravity="right"
-                            android:text="$ 5.6"
-                            android:textColor="#000000"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:background="@drawable/customborder">
-
-                        <ImageView
-                            android:id="@+id/snst4"
-                            android:layout_width="200dp"
-                            android:layout_height="210dp"
-                            android:layout_marginTop="-25dp"
-                            android:src="@drawable/snst4" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/snst4"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginTop="-20dp"
-                            android:gravity="right"
-                            android:text="Painting 8"
-                            android:textColor="#000000"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/snst4"
-                            android:layout_alignRight="@+id/snst4"
-                            android:layout_marginTop="-20dp"
-                            android:layout_marginRight="5dp"
-                            android:gravity="right"
-                            android:text="$ 12"
-                            android:textColor="#000000"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-                    </RelativeLayout>
-
-                    <Button
-                        android:id="@+id/sunsetmainpage_btn"
-                        android:layout_row="0"
-                        android:layout_column="4"
-                        android:layout_width="60dp"
-                        android:layout_height="190dp"
-                        android:layout_gravity="center_vertical"
-                        android:background="@drawable/roundbutton"
-                        android:layout_marginLeft="7dp"
-                        android:text=">>"
-                        android:textColor="@color/white"
-                        android:textSize="35dp"
-                        android:textStyle="normal" />
-                </GridLayout>
-            </HorizontalScrollView>
-
-            <TextView
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="15dp"
-                android:text="Digital Paintings"
-                android:textColor="@color/black"
-                android:textSize="20dp"
-                android:textStyle="bold" />
+                app:fab_colorNormal="@color/black"
+                app:fab_colorPressed="@color/black"
+                app:fab_size="normal"
+                app:fab_icon="@drawable/ic_person"
+                app:fab_title="Fab Button2" />
 
-            <HorizontalScrollView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <GridLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="160dp"
-                    android:layout_marginTop="5dp">
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:background="@drawable/customborder">
-
-                        <ImageView
-                            android:id="@+id/pt9"
-                            android:layout_width="200dp"
-                            android:layout_height="210dp"
-                            android:layout_marginTop="-25dp"
-                            android:src="@drawable/pt9" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/pt9"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginTop="-20dp"
-                            android:gravity="right"
-                            android:text="Painting 9"
-                            android:textColor="#000000"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/pt9"
-                            android:layout_alignRight="@+id/pt9"
-                            android:layout_marginTop="-20dp"
-                            android:layout_marginRight="5dp"
-                            android:gravity="right"
-                            android:text="$ 9.6"
-                            android:textColor="#000000"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:background="@drawable/customborder">
-
-                        <ImageView
-                            android:id="@+id/pt10"
-                            android:layout_width="200dp"
-                            android:layout_height="210dp"
-                            android:layout_marginTop="-25dp"
-                            android:src="@drawable/pt10" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/pt10"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginTop="-20dp"
-                            android:gravity="right"
-                            android:text="Painting 10"
-                            android:textColor="#000000"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/pt10"
-                            android:layout_alignRight="@+id/pt10"
-                            android:layout_marginTop="-20dp"
-                            android:layout_marginRight="5dp"
-                            android:gravity="right"
-                            android:text="$ 10.6"
-                            android:textColor="#000000"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:background="@drawable/customborder">
-
-                        <ImageView
-                            android:id="@+id/pt11"
-                            android:layout_width="200dp"
-                            android:layout_height="210dp"
-                            android:layout_marginTop="-25dp"
-                            android:src="@drawable/pt11" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/pt11"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginTop="-20dp"
-                            android:gravity="right"
-                            android:text="Painting 11"
-                            android:textColor="#000000"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/pt11"
-                            android:layout_alignRight="@+id/pt11"
-                            android:layout_marginTop="-20dp"
-                            android:layout_marginRight="5dp"
-                            android:gravity="right"
-                            android:text="$ 11.3"
-                            android:textColor="#000000"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:background="@drawable/customborder">
-
-                        <ImageView
-                            android:id="@+id/pt12"
-                            android:layout_width="200dp"
-                            android:layout_height="210dp"
-                            android:layout_marginTop="-25dp"
-                            android:src="@drawable/pt12" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/pt12"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginTop="-20dp"
-                            android:gravity="right"
-                            android:text="Painting 12"
-                            android:textColor="#000000"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/pt12"
-                            android:layout_alignRight="@+id/pt12"
-                            android:layout_marginTop="-20dp"
-                            android:layout_marginRight="5dp"
-                            android:gravity="right"
-                            android:text="$ 5.6"
-                            android:textColor="#000000"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-                    </RelativeLayout>
-                    <Button
-                        android:id="@+id/digitalpaintingsmainpage_btn"
-                        android:layout_row="0"
-                        android:layout_column="4"
-                        android:layout_width="60dp"
-                        android:layout_height="140dp"
-                        android:layout_gravity="center_vertical"
-                        android:background="@drawable/roundbutton"
-                        android:layout_marginLeft="7dp"
-                        android:text=">>"
-                        android:textColor="@color/white"
-                        android:textSize="35dp"
-                        android:textStyle="normal" />
-                </GridLayout>
-            </HorizontalScrollView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="15dp"
-                android:text="Canvas Paintings"
-                android:textColor="@color/black"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-
-            <HorizontalScrollView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <GridLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="200dp"
-                    android:layout_marginTop="5dp">
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:background="@drawable/customborder">
-
-                        <ImageView
-                            android:id="@+id/pt13"
-                            android:layout_width="200dp"
-                            android:layout_height="210dp"
-                            android:layout_marginTop="-25dp"
-                            android:src="@drawable/pt13" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/pt13"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginTop="-20dp"
-                            android:gravity="right"
-                            android:text="Painting 13"
-                            android:textColor="#000000"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/pt13"
-                            android:layout_alignRight="@+id/pt13"
-                            android:layout_marginTop="-20dp"
-                            android:layout_marginRight="5dp"
-                            android:gravity="right"
-                            android:text="$ 11.3"
-                            android:textColor="#000000"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:background="@drawable/customborder">
-
-                        <ImageView
-                            android:id="@+id/pt14"
-                            android:layout_width="200dp"
-                            android:layout_height="210dp"
-                            android:layout_marginTop="-25dp"
-                            android:src="@drawable/pt14" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/pt14"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginTop="-20dp"
-                            android:gravity="right"
-                            android:text="Painting 14"
-                            android:textColor="#000000"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/pt14"
-                            android:layout_alignRight="@+id/pt14"
-                            android:layout_marginTop="-20dp"
-                            android:layout_marginRight="5dp"
-                            android:gravity="right"
-                            android:text="$ 14.3"
-                            android:textColor="#000000"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:background="@drawable/customborder">
-
-                        <ImageView
-                            android:id="@+id/pt15"
-                            android:layout_width="200dp"
-                            android:layout_height="210dp"
-                            android:layout_marginTop="-25dp"
-                            android:src="@drawable/pt15" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/pt15"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginTop="-20dp"
-                            android:gravity="right"
-                            android:text="Painting 15"
-                            android:textColor="#000000"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/pt15"
-                            android:layout_alignRight="@+id/pt15"
-                            android:layout_marginTop="-20dp"
-                            android:layout_marginRight="5dp"
-                            android:gravity="right"
-                            android:text="$ 6.8"
-                            android:textColor="#000000"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:background="@drawable/customborder">
-
-                        <ImageView
-                            android:id="@+id/pt16"
-                            android:layout_width="200dp"
-                            android:layout_height="210dp"
-                            android:layout_marginTop="-25dp"
-                            android:src="@drawable/pt16" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/pt16"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginTop="-20dp"
-                            android:gravity="right"
-                            android:text="Painting 16"
-                            android:textColor="#000000"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/pt16"
-                            android:layout_alignRight="@+id/pt16"
-                            android:layout_marginTop="-20dp"
-                            android:layout_marginRight="5dp"
-                            android:gravity="right"
-                            android:text="$ 11.3"
-                            android:textColor="#000000"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-                    </RelativeLayout>
-                    <Button
-                        android:id="@+id/canvaspaintingsmainpage_btn"
-                        android:layout_row="0"
-                        android:layout_column="4"
-                        android:layout_width="60dp"
-                        android:layout_height="180dp"
-                        android:layout_gravity="center_vertical"
-                        android:background="@drawable/roundbutton"
-                        android:layout_marginLeft="7dp"
-                        android:text=">>"
-                        android:textColor="@color/white"
-                        android:textSize="35dp"
-                        android:textStyle="normal" />
-                </GridLayout>
-            </HorizontalScrollView>
-        </LinearLayout>
-
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
     </LinearLayout>
-</ScrollView>
+</RelativeLayout>

@@ -1,15 +1,22 @@
 package com.example.powersale;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
+
+import com.google.android.material.snackbar.BaseTransientBottomBar;
+import com.google.android.material.snackbar.Snackbar;
 
 public class activity_snst1_page extends AppCompatActivity {
+    CoordinatorLayout coordinatorLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -17,6 +24,26 @@ public class activity_snst1_page extends AppCompatActivity {
         setContentView(R.layout.snst1_page);
 
         Button sharebtn = findViewById(R.id.sharebtn);
+        Button location_btn = findViewById(R.id.location_btn);
+        Button more_details_btn = findViewById(R.id.more_details_btn);
+        Button bid_btn = findViewById(R.id.bid_btn);
+
+        bid_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(findViewById(android.R.id.content), "Place Bid on this product?",Snackbar.LENGTH_INDEFINITE)
+                        .setAnimationMode(BaseTransientBottomBar.ANIMATION_MODE_SLIDE)
+                        .setBackgroundTint(Color.BLACK)
+                        .setAction("Confirm", new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                Toast.makeText(activity_snst1_page.this, "Bid has been Placed!", Toast.LENGTH_SHORT).show();
+                            }
+                        })
+                        .setActionTextColor(Color.WHITE)
+                        .show();
+            }
+        });
         sharebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -31,7 +58,7 @@ public class activity_snst1_page extends AppCompatActivity {
                 }
             }
         });
-        Button location_btn = findViewById(R.id.location_btn);
+
         location_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,7 +70,7 @@ public class activity_snst1_page extends AppCompatActivity {
                 }
             }
         });
-        Button more_details_btn = findViewById(R.id.more_details_btn);
+
         more_details_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
