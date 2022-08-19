@@ -488,7 +488,7 @@
 
                         <RelativeLayout
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_marginLeft="10dp"
                             android:background="@drawable/customborder">
 
@@ -827,6 +827,7 @@
             app:fab_labelsPosition="left" >
 
             <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/reviewpage_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:fab_colorNormal="@color/black"

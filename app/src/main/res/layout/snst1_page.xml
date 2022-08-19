@@ -17,8 +17,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
                 android:text="Sunset Image"
                 android:textColor="@color/black"
                 android:textSize="30dp"
@@ -30,11 +30,12 @@
                 android:layout_marginLeft="17dp"
                 android:text="by Johns Baby"
                 android:textSize="15dp" />
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="270dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginRight="10dp"
                 android:src="@drawable/snst1" />
 
@@ -46,7 +47,6 @@
                 android:background="@drawable/customupperroundborder"
                 android:orientation="vertical"
                 android:padding="10dp">
-
 
                 <TextView
                     android:id="@+id/description"
@@ -109,12 +109,13 @@
 
 
                 <GridLayout
-                    android:id="@+id/sample"
+                    android:id="@+id/gridlay_in_snst1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/bid_btn"
                     android:columnCount="2"
                     android:rowCount="2">
+
                     <RelativeLayout>
 
                         <Button
@@ -136,8 +137,8 @@
                             android:layout_height="wrap_content"
                             android:layout_row="1"
                             android:layout_column="0"
-                            android:layout_marginTop="10dp"
                             android:layout_below="@+id/more_details_btn"
+                            android:layout_marginTop="10dp"
                             android:background="@drawable/roundbutton2"
                             android:minHeight="45dp"
                             android:paddingLeft="35dp"
@@ -165,6 +166,34 @@
                             android:textStyle="bold" />
                     </RelativeLayout>
                 </GridLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/gridlay_in_snst1"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Turn on Notification for bids "
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ToggleButton
+                        android:id="@+id/toggleButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/roundbutton"
+                        android:textColor="@color/white"
+                        android:textOff="ON"
+                        android:textOn="OFF"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
             </RelativeLayout>
         </LinearLayout>
 

@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/black">
 
     <TextView
@@ -33,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
-            android:text="Name : Johns Baby"
+            android:text="Name : Johns baby"
             android:textColor="@color/black"
             android:textSize="25dp"
             android:textStyle="bold" />
@@ -80,39 +81,61 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:background="@drawable/radio_selector"
+                    android:button="@android:color/transparent"
                     android:elevation="4dp"
                     android:padding="10dp"
                     android:text="Male"
-                    android:textStyle="bold"
-                    android:button="@android:color/transparent"
                     android:textColor="@drawable/radio_textcolor"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:background="@drawable/radio_selector"
+                    android:button="@android:color/transparent"
                     android:elevation="4dp"
                     android:padding="8dp"
                     android:text="Female"
-                    android:textStyle="bold"
-                    android:button="@android:color/transparent"
                     android:textColor="@drawable/radio_textcolor"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
             </RadioGroup>
         </LinearLayout>
 
-<!--        <com.google.android.material.textfield.TextInputLayout-->
-<!--            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content">-->
-<!--            -->
-<!--            <AutoCompleteTextView-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content" />-->
-<!--            -->
-<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Show Balance Tokens on Profile    "
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tokens_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Balance = 56 Tokens"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Allow all Application Notifications       "
+            android:textOff="Off"
+            android:textOn="On"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:thumb="@drawable/thumb_switch"
+            app:showText="true"
+            app:track="@drawable/track_switch" />
 
     </LinearLayout>
 

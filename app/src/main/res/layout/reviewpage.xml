@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Powersale"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:background="@drawable/roundbutton3"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:background="@drawable/customborder">
+        <TextView
+            android:id="@+id/ratingbar_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rate Us Your Experience"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+        <RatingBar
+            android:id="@+id/ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ratingbar_heading"
+            android:numStars="5"
+            android:progressTint="@color/black"
+            android:rating="0"
+            android:stepSize=".5"
+            android:layout_margin="8dp"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:id="@+id/ratingbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundbutton"
+            android:text="Rate"
+            android:textColor="@color/white"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/ratingbar"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:background="@drawable/customborder">
+        <TextView
+            android:id="@+id/problemfaced"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tells us a problem you have faced :"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/problemfaced"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:entries="@array/spinn"
+            android:outlineAmbientShadowColor="@color/black" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:background="@drawable/customborder">
+        <TextView
+            android:id="@+id/checkbox_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rate Us Your Experience"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+        <CheckBox
+            android:id="@+id/checkbox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Interface"
+            android:layout_below="@+id/checkbox_heading"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkbox_heading"
+            android:layout_alignRight="@+id/checkbox_heading"
+            android:text=" Services   "
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+        <CheckBox
+            android:id="@+id/checkbox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Support"
+            android:layout_below="@+id/checkbox1"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+        <CheckBox
+            android:id="@+id/checkbox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other Area"
+            android:layout_below="@+id/checkbox2"
+            android:layout_alignRight="@+id/checkbox2"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+    </RelativeLayout>
+</LinearLayout>

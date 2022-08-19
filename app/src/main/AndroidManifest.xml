@@ -41,6 +41,9 @@
         <activity
             android:name=".profilepage"
             android:exported="false" />
+        <activity
+            android:name=".reviewpage"
+            android:exported="false" />
     </application>
 
 </manifest>
