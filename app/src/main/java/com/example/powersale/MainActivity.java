@@ -37,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         username_txt = (EditText)findViewById(R.id.username);
         userpswd_txt = (EditText)findViewById(R.id.userpswd);
-        appname=(TextView)findViewById(R.id.appname);
         addListenerOnButton();
 
     }

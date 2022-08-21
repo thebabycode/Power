@@ -68,13 +68,15 @@ public class MainActivity2 extends AppCompatActivity {
             }
         });
     }
+
+    //********************************* Alert dialog box *****************************
     @Override
     public void onBackPressed()
     {
 
         // Create the object of
         // AlertDialog Builder class
-        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity2.this);
+        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity2.this, R.style.AlertDialogStyle);
         builder.setMessage("Save Changes?");
 
         // Set Alert Title
@@ -82,7 +84,6 @@ public class MainActivity2 extends AppCompatActivity {
         builder.setCancelable(false);
 
         builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-
             @Override
             public void onClick(DialogInterface dialog, int which)
             {
