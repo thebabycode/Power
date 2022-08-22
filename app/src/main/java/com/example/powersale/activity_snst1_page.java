@@ -79,7 +79,6 @@ public class activity_snst1_page extends AppCompatActivity {
                     startActivity(i);
                 }
                 catch(ActivityNotFoundException e){
-
                 }
             }
         });

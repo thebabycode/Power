@@ -40,17 +40,18 @@
             android:stepSize=".5"
             android:layout_margin="8dp"
             android:layout_centerHorizontal="true"/>
+
         <Button
             android:id="@+id/ratingbutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/ratingbar"
+            android:layout_centerHorizontal="true"
             android:background="@drawable/roundbutton"
             android:text="Rate"
             android:textColor="@color/white"
             android:textSize="23dp"
-            android:textStyle="bold"
-            android:layout_below="@+id/ratingbar"
-            android:layout_centerHorizontal="true"/>
+            android:textStyle="bold" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -59,14 +60,15 @@
         android:layout_margin="10dp"
         android:padding="15dp"
         android:background="@drawable/customborder">
+
         <TextView
             android:id="@+id/problemfaced"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Tells us a problem you have faced :"
-            android:textStyle="bold"
             android:textColor="@color/black"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
         <Spinner
             android:layout_width="300dp"
@@ -84,20 +86,22 @@
         android:layout_margin="10dp"
         android:padding="15dp"
         android:background="@drawable/customborder">
+
         <TextView
             android:id="@+id/checkbox_heading"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Rate Us Your Experience"
-            android:textStyle="bold"
             android:textColor="@color/black"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
         <CheckBox
             android:id="@+id/checkbox1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="User Interface"
             android:layout_below="@+id/checkbox_heading"
+            android:text="User Interface"
             android:textColor="@color/black"
             android:textSize="15dp" />
 
