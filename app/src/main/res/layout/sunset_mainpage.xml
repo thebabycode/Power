@@ -13,12 +13,12 @@
             android:id="@+id/sunsetmainpage_heading"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
             android:text="Sunset Paintings"
+            android:textAlignment="center"
             android:textColor="@color/black"
             android:textStyle="bold"
-            tools:ignore="MissingConstraints"
-            android:layout_marginTop="3dp"
-            android:textAlignment="center" />
+            tools:ignore="MissingConstraints" />
 
         <GridLayout
             android:layout_width="match_parent"

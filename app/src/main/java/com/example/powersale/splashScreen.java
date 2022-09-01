@@ -11,6 +11,7 @@ public class splashScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
+
         Thread thread = new Thread() {
             public void run() {
                 try
@@ -27,5 +28,8 @@ public class splashScreen extends AppCompatActivity {
                 }
             }
         };thread.start();
+
+        // to hide the action bar for this activity
+        getSupportActionBar().hide();
     }
 }
