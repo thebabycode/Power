@@ -107,6 +107,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // to hide the action bar for this activity
+        getSupportActionBar().hide();
+
     }
 
 

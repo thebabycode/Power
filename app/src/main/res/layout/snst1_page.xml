@@ -145,8 +145,8 @@
                                 android:layout_marginTop="10dp"
                                 android:background="@drawable/roundbutton2"
                                 android:minHeight="45dp"
-                                android:paddingLeft="35dp"
-                                android:paddingRight="35dp"
+                                android:paddingLeft="25dp"
+                                android:paddingRight="25dp"
                                 android:text="Share via Mail"
                                 android:textColor="@color/white"
                                 android:textStyle="bold" />
@@ -163,8 +163,8 @@
                                 android:layout_marginTop="10dp"
                                 android:background="@drawable/roundbutton2"
                                 android:minHeight="45dp"
-                                android:paddingLeft="20dp"
-                                android:paddingRight="20dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
                                 android:text="View Pickup Location"
                                 android:textColor="@color/white"
                                 android:textStyle="bold" />
@@ -200,7 +200,6 @@
                     </LinearLayout>
                 </RelativeLayout>
             </LinearLayout>
-
         </RelativeLayout>
     </ScrollView>
 
