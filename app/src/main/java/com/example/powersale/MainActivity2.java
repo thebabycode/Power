@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.os.Bundle;
@@ -67,6 +68,12 @@ public class MainActivity2 extends AppCompatActivity {
                 startActivity(i);
             }
         });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.home_menu,menu);
+        return true;
     }
 
     //********************************* Alert dialog box *****************************
