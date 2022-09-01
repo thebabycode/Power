@@ -39,7 +39,6 @@ public class MainActivity2 extends AppCompatActivity {
         profile_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 Intent i = new Intent(MainActivity2.this, profilepage.class);
                 startActivity(i);
             }
@@ -48,7 +47,6 @@ public class MainActivity2 extends AppCompatActivity {
         reviewpage_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 Intent i = new Intent(MainActivity2.this, reviewpage.class);
                 startActivity(i);
             }
@@ -80,11 +78,8 @@ public class MainActivity2 extends AppCompatActivity {
     @Override
     public void onBackPressed()
     {
-
-        // Create the object of
-        // AlertDialog Builder class
         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity2.this, R.style.AlertDialogStyle);
-        builder.setMessage("Save Changes?");
+        builder.setMessage("Do you want to Exit?");
 
         // Set Alert Title
         builder.setTitle("");
@@ -109,8 +104,6 @@ public class MainActivity2 extends AppCompatActivity {
 
         // Create the Alert dialog
         AlertDialog alertDialog = builder.create();
-
-        // Show the Alert Dialog box
         alertDialog.show();
     }
 }

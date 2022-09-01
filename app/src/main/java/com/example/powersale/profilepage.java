@@ -19,11 +19,8 @@ public class profilepage extends AppCompatActivity {
 
         checkBoxVisibility = findViewById(R.id.checkbox);
         text = findViewById(R.id.tokens_balance);
-
         boolean isChecked =checkBoxVisibility.isChecked();
-
         updateTextVisibility(isChecked);
-
         checkBoxVisibility.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonview, boolean isChecked) {
