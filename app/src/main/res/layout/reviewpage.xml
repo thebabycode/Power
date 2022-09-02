@@ -56,80 +56,101 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:padding="15dp"
-        android:background="@drawable/customborder">
+        android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/problemfaced"
+        <RelativeLayout
+            android:id="@+id/problemfaced_grp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Tells us a problem you have faced :"
-            android:textColor="@color/black"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:background="@drawable/customborder">
 
-        <Spinner
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="20dp"
-            android:layout_below="@+id/problemfaced"
-            android:layout_marginTop="10dp"
-            android:background="@color/white"
-            android:entries="@array/spinn"
-            android:outlineAmbientShadowColor="@color/black" />
-    </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:padding="15dp"
-        android:background="@drawable/customborder">
+            <TextView
+                android:id="@+id/problemfaced"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tells us a problem you have faced :"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/checkbox_heading"
+            <Spinner
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/problemfaced"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:entries="@array/spinn"
+                android:outlineAmbientShadowColor="@color/black" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/experience_grp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Rate Us Your Experience"
-            android:textColor="@color/black"
-            android:textSize="20dp"
+            android:layout_below="@+id/problemfaced_grp"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:background="@drawable/customborder">
+
+            <TextView
+                android:id="@+id/checkbox_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rate Us Your Experience"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/checkbox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkbox_heading"
+                android:text="User Interface"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <CheckBox
+                android:id="@+id/checkbox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkbox_heading"
+                android:layout_alignRight="@+id/checkbox_heading"
+                android:text=" Services   "
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+            <CheckBox
+                android:id="@+id/checkbox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Support"
+                android:layout_below="@+id/checkbox1"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+            <CheckBox
+                android:id="@+id/checkbox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other Area"
+                android:layout_below="@+id/checkbox2"
+                android:layout_alignRight="@+id/checkbox2"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/submitbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/experience_grp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/roundbutton"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="23dp"
             android:textStyle="bold" />
-
-        <CheckBox
-            android:id="@+id/checkbox1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/checkbox_heading"
-            android:text="User Interface"
-            android:textColor="@color/black"
-            android:textSize="15dp" />
-
-        <CheckBox
-            android:id="@+id/checkbox2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/checkbox_heading"
-            android:layout_alignRight="@+id/checkbox_heading"
-            android:text=" Services   "
-            android:textColor="@color/black"
-            android:textSize="15dp" />
-        <CheckBox
-            android:id="@+id/checkbox3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Support"
-            android:layout_below="@+id/checkbox1"
-            android:textColor="@color/black"
-            android:textSize="15dp" />
-        <CheckBox
-            android:id="@+id/checkbox4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Other Area"
-            android:layout_below="@+id/checkbox2"
-            android:layout_alignRight="@+id/checkbox2"
-            android:textColor="@color/black"
-            android:textSize="15dp" />
     </RelativeLayout>
 </LinearLayout>
