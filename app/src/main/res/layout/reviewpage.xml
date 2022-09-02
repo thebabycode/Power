@@ -14,13 +14,13 @@
         android:textStyle="bold"
         android:background="@drawable/roundbutton3"/>
 
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:padding="15dp"
         android:background="@drawable/customborder">
+
         <TextView
             android:id="@+id/ratingbar_heading"
             android:layout_width="match_parent"
