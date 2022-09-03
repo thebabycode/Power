@@ -20,6 +20,20 @@
         android:title="Settings"
         android:icon="@drawable/ic_exit"
         app:showAsAction="never" >
+        <menu>
+            <item
+                android:id="@+id/subitem1"
+                android:title="About"/>
+            <item
+                android:id="@+id/subitem2"
+                android:title="Terms and Conditions"/>
+            <item
+                android:id="@+id/subitem3"
+                android:title="Privacy Policy"/>
+            <item
+                android:id="@+id/subitem4"
+                android:title="Cookie Policy"/>
+        </menu>
     </item>
 
     <item
