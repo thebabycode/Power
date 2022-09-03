@@ -11,34 +11,20 @@
 
     <item
         android:id="@+id/item1"
-        android:icon="@drawable/ic_exit"
-        android:title="Favorites" />
+        android:title="Favorites"
+        android:icon="@drawable/ic_home"
+        app:showAsAction="never" />
 
     <item
         android:id="@+id/item2"
+        android:title="Settings"
         android:icon="@drawable/ic_exit"
-        android:title="Settings">
-        <menu>
-            <item
-                android:id="@+id/subitem1"
-                android:title="About"/>
-            <item
-                android:id="@+id/subitem2"
-                android:title="Terms and Conditions"/>
-            <item
-                android:id="@+id/subitem3"
-                android:title="Privacy Policy"/>
-            <item
-                android:id="@+id/subitem4"
-                android:title="Cookie Policy"/>
-        </menu>
+        app:showAsAction="never" >
     </item>
 
     <item
-        android:id="@+id/exit"
-        android:icon="@drawable/ic_exit"
-        android:title="Exit"
-        app:showAsAction="withText"/>
-
-
+        android:id="@+id/log_out"
+        android:title="Log Out"
+        android:icon="@drawable/ic_review"
+        app:showAsAction="never"/>
 </menu>
