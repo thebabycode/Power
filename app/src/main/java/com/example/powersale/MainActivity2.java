@@ -9,6 +9,8 @@ import androidx.appcompat.view.menu.MenuBuilder;
 import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
+import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -32,6 +34,8 @@ public class MainActivity2 extends AppCompatActivity {
         t.setText(str);
 
         addListenerOnButton();
+        // for context menu
+        registerForContextMenu(findViewById(R.id.layout_snst1));
     }
 
     public void addListenerOnButton() {
@@ -92,6 +96,35 @@ public class MainActivity2 extends AppCompatActivity {
                 break;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    //********************************* Context Menus *****************************
+
+
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        getMenuInflater().inflate(R.menu.context_home_menu,menu);
+        super.onCreateContextMenu(menu, v, menuInfo);
+    }
+
+    @Override
+    public boolean onContextItemSelected(@NonNull MenuItem item) {
+        switch(item.getItemId())
+        {
+            case R.id.addtofavourites:
+                return true;
+
+            case R.id.shareviamail:
+                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("mailto:"+"johns.baby@mca.christuniversity.in"));
+                i.putExtra(Intent.EXTRA_SUBJECT, "Contact");
+                i.putExtra(Intent.EXTRA_TEXT, "Hello");
+                startActivity(i);
+                return true;
+            case R.id.shareviawhatsapp:
+            default:
+                break;
+        }
+        return super.onContextItemSelected(item);
     }
 
     //********************************* Alert dialog box *****************************

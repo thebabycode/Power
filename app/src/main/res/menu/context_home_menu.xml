@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/addtofavourites"
+        android:icon="@drawable/ic_addto_favorite"
+        android:title="Add to Favorites" />
+    <item
+        android:id="@+id/shareviamail"
+        android:title="Share via Mail"
+        android:icon="@drawable/ic_email"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/shareviawhatsapp"
+        android:title="Share via Whatsapp"
+        android:icon="@drawable/ic_phone"
+        app:showAsAction="never" />
+</menu>
