@@ -84,7 +84,7 @@ public class MainActivity2 extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch(item.getItemId())
         {
-            case R.id.log_out:
+            case R.id.logout:
                 onBackPressed();
                 break;
 

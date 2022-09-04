@@ -8,16 +8,22 @@
         <entry key="..\:/Users/JOHNS BABY/AndroidStudioProjects/Powersale/app/src/main/res/drawable/categories_mainpage_btnborder.xml" value="0.290625" />
         <entry key="..\:/Users/JOHNS BABY/AndroidStudioProjects/Powersale/app/src/main/res/drawable/customborder.xml" value="0.290625" />
         <entry key="..\:/Users/JOHNS BABY/AndroidStudioProjects/Powersale/app/src/main/res/drawable/customupperroundborder.xml" value="0.290625" />
+        <entry key="..\:/Users/JOHNS BABY/AndroidStudioProjects/Powersale/app/src/main/res/drawable/ic_about.xml" value="0.1013157894736842" />
+        <entry key="..\:/Users/JOHNS BABY/AndroidStudioProjects/Powersale/app/src/main/res/drawable/ic_cookie.xml" value="0.1013157894736842" />
         <entry key="..\:/Users/JOHNS BABY/AndroidStudioProjects/Powersale/app/src/main/res/drawable/ic_exit.xml" value="0.18355263157894736" />
+        <entry key="..\:/Users/JOHNS BABY/AndroidStudioProjects/Powersale/app/src/main/res/drawable/ic_favorite.xml" value="0.10098684210526315" />
         <entry key="..\:/Users/JOHNS BABY/AndroidStudioProjects/Powersale/app/src/main/res/drawable/ic_home.xml" value="0.18355263157894736" />
         <entry key="..\:/Users/JOHNS BABY/AndroidStudioProjects/Powersale/app/src/main/res/drawable/ic_launcher_background.xml" value="0.18355263157894736" />
         <entry key="..\:/Users/JOHNS BABY/AndroidStudioProjects/Powersale/app/src/main/res/drawable/ic_leftarrow.xml" value="0.18355263157894736" />
         <entry key="..\:/Users/JOHNS BABY/AndroidStudioProjects/Powersale/app/src/main/res/drawable/ic_location.xml" value="0.18355263157894736" />
+        <entry key="..\:/Users/JOHNS BABY/AndroidStudioProjects/Powersale/app/src/main/res/drawable/ic_logout.xml" value="0.10098684210526315" />
         <entry key="..\:/Users/JOHNS BABY/AndroidStudioProjects/Powersale/app/src/main/res/drawable/ic_menu.xml" value="0.18355263157894736" />
         <entry key="..\:/Users/JOHNS BABY/AndroidStudioProjects/Powersale/app/src/main/res/drawable/ic_person.xml" value="0.18355263157894736" />
+        <entry key="..\:/Users/JOHNS BABY/AndroidStudioProjects/Powersale/app/src/main/res/drawable/ic_privacy.xml" value="0.1013157894736842" />
         <entry key="..\:/Users/JOHNS BABY/AndroidStudioProjects/Powersale/app/src/main/res/drawable/ic_review.xml" value="0.18355263157894736" />
         <entry key="..\:/Users/JOHNS BABY/AndroidStudioProjects/Powersale/app/src/main/res/drawable/ic_search.xml" value="0.18355263157894736" />
         <entry key="..\:/Users/JOHNS BABY/AndroidStudioProjects/Powersale/app/src/main/res/drawable/ic_share.xml" value="0.18355263157894736" />
+        <entry key="..\:/Users/JOHNS BABY/AndroidStudioProjects/Powersale/app/src/main/res/drawable/ic_terms.xml" value="0.1013157894736842" />
         <entry key="..\:/Users/JOHNS BABY/AndroidStudioProjects/Powersale/app/src/main/res/drawable/radio_buttoncolor.xml" value="0.18355263157894736" />
         <entry key="..\:/Users/JOHNS BABY/AndroidStudioProjects/Powersale/app/src/main/res/drawable/radio_normal.xml" value="0.18355263157894736" />
         <entry key="..\:/Users/JOHNS BABY/AndroidStudioProjects/Powersale/app/src/main/res/drawable/radio_selected.xml" value="0.18355263157894736" />
@@ -41,10 +47,11 @@
         <entry key="..\:/Users/JOHNS BABY/AndroidStudioProjects/Powersale/app/src/main/res/layout/sunset_mainpage.xml" value="0.2" />
         <entry key="..\:/Users/JOHNS BABY/AndroidStudioProjects/Powersale/app/src/main/res/layout/toolbar.xml" value="0.17335526315789473" />
         <entry key="..\:/Users/JOHNS BABY/AndroidStudioProjects/Powersale/app/src/main/res/menu/example_menu.xml" value="0.17335526315789473" />
-        <entry key="..\:/Users/JOHNS BABY/AndroidStudioProjects/Powersale/app/src/main/res/menu/home_menu.xml" value="0.17335526315789473" />
+        <entry key="..\:/Users/JOHNS BABY/AndroidStudioProjects/Powersale/app/src/main/res/menu/home_menu.xml" value="0.1" />
         <entry key="..\:/Users/JOHNS BABY/AndroidStudioProjects/Powersale/app/src/main/res/menu/main_menu.xml" value="0.17335526315789473" />
         <entry key="..\:/Users/JOHNS BABY/AndroidStudioProjects/Powersale/app/src/main/res/menu/menu.xml" value="0.17335526315789473" />
         <entry key="..\:/Users/JOHNS BABY/AndroidStudioProjects/Powersale/app/src/main/res/menu/menu2.xml" value="0.17335526315789473" />
+        <entry key="..\:/Users/JOHNS BABY/AndroidStudioProjects/Powersale/app/src/main/res/menu/sample.xml" value="0.1" />
         <entry key="..\:/Users/JOHNS BABY/AndroidStudioProjects/Powersale/app/src/main/res/menu/snst1_menu.xml" value="0.17335526315789473" />
         <entry key="..\:/Users/JOHNS BABY/AndroidStudioProjects/Powersale/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.290625" />
       </map>
