@@ -35,7 +35,7 @@ public class MainActivity2 extends AppCompatActivity {
 
         addListenerOnButton();
         // for context menu
-        registerForContextMenu(findViewById(R.id.layout_snst1));
+        registerForContextMenu(findViewById(R.id.snst1_btn));
     }
 
     public void addListenerOnButton() {
@@ -82,6 +82,7 @@ public class MainActivity2 extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.home_menu,menu);
         return true;
+
     }
 
     @Override
@@ -106,7 +107,6 @@ public class MainActivity2 extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.context_home_menu,menu);
         super.onCreateContextMenu(menu, v, menuInfo);
     }
-
     @Override
     public boolean onContextItemSelected(@NonNull MenuItem item) {
         switch(item.getItemId())
@@ -120,7 +120,9 @@ public class MainActivity2 extends AppCompatActivity {
                 i.putExtra(Intent.EXTRA_TEXT, "Hello");
                 startActivity(i);
                 return true;
+
             case R.id.shareviawhatsapp:
+                return true;
             default:
                 break;
         }
