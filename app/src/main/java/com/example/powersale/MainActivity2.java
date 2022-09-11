@@ -92,7 +92,10 @@ public class MainActivity2 extends AppCompatActivity {
             case R.id.logout:
                 onBackPressed();
                 break;
-
+            case R.id.about:
+                Intent i = new Intent(MainActivity2.this, about.class);
+                startActivity(i);
+                break;
             default:
                 break;
         }
