@@ -92,9 +92,15 @@ public class MainActivity2 extends AppCompatActivity {
             case R.id.logout:
                 onBackPressed();
                 break;
+
+            case R.id.favourites:
+                Intent fav = new Intent(MainActivity2.this, favourites.class);
+                startActivity(fav);
+                break;
+
             case R.id.about:
-                Intent i = new Intent(MainActivity2.this, about.class);
-                startActivity(i);
+                Intent abt = new Intent(MainActivity2.this, about.class);
+                startActivity(abt);
                 break;
             default:
                 break;
