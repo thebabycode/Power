@@ -24,8 +24,10 @@ public class favourites extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewPager);
 
         vpadapter Vpadapter = new vpadapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
-        Vpadapter.adddfragment(new oilfragment(), "Oil");
-        Vpadapter.adddfragment(new sunstfragment(), "Sunset");
+        Vpadapter.adddfragment(new fragment_oil(), "Oil");
+        Vpadapter.adddfragment(new fragment_snst(), "Sunset");
+        Vpadapter.adddfragment(new fragment_digital(), "Digital");
+        Vpadapter.adddfragment(new fragment_canvas(), "Canvas");
         viewPager.setAdapter(Vpadapter);
     }
 }
