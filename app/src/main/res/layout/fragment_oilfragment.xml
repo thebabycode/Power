@@ -6,10 +6,136 @@
     tools:context=".oilfragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="This is OIl page" />
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/customborder">
+
+                <ImageView
+                    android:id="@+id/pt1"
+                    android:layout_width="175dp"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="-20dp"
+                    android:src="@drawable/pt1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pt1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="-20dp"
+                    android:gravity="left"
+                    android:text="Painting 1"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pt1"
+                    android:layout_alignRight="@+id/pt1"
+                    android:layout_marginTop="-20dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="right"
+                    android:text="$ 5.6"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/customborder">
+
+                <ImageView
+                    android:id="@+id/pt2"
+                    android:layout_width="175dp"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="-20dp"
+                    android:src="@drawable/pt2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pt2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="-20dp"
+                    android:gravity="right"
+                    android:text="Painting 2"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pt2"
+                    android:layout_alignRight="@+id/pt2"
+                    android:layout_marginTop="-20dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="right"
+                    android:text="$ 5.0"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/customborder">
+
+                <ImageView
+                    android:id="@+id/pt3"
+                    android:layout_width="175dp"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="-20dp"
+                    android:src="@drawable/pt3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pt3"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="-20dp"
+                    android:gravity="right"
+                    android:text="Painting 3"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pt3"
+                    android:layout_alignRight="@+id/pt3"
+                    android:layout_marginTop="-20dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="right"
+                    android:text="$ 5.0"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
 
 </FrameLayout>
