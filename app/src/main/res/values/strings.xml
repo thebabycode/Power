@@ -10,7 +10,44 @@
         <item>Account Problems</item>
         <item>Other</item>
     </string-array>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- for recycler view -->
+    <string-array name="carname_list">
+        <item>Renault Kwid</item>
+        <item>Suzuki Swift</item>
+        <item>Suzuki Baleno</item>
+        <item>Tata Tiago</item>
+        <item>Toyota Innova</item>
+        <item>Suzuki XL6</item>
+        <item>Audi Q7</item>
+        <item>Ferrari 296 GTB</item>
+        <item>Hyundai Creta</item>
+        <item>Toyota Hyryder</item>
+    </string-array>
+
+    <string-array name="carprice_list">
+        <item>5.60 Lakh</item>
+        <item>7.20 Lakh</item>
+        <item>8.50 Lakh</item>
+        <item>6.70 Lakh</item>
+        <item>23.20 Lakh</item>
+        <item>14.30 Lakh</item>
+        <item>95.60 Lakh</item>
+        <item>3.02 Cr</item>
+        <item>11.10 Lakh</item>
+        <item>17.60 Lakh</item>
+    </string-array>
+
+    <string-array name="carmileage_list">
+        <item>12 kmpl</item>
+        <item>12 kmpl</item>
+        <item>12 kmpl</item>
+        <item>12 kmpl</item>
+        <item>12 kmpl</item>
+        <item>12 kmpl</item>
+        <item>12 kmpl</item>
+        <item>12 kmpl</item>
+        <item>12 kmpl</item>
+        <item>12 kmpl</item>
+    </string-array>
 
 </resources>
