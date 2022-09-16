@@ -98,6 +98,11 @@ public class MainActivity2 extends AppCompatActivity {
                 startActivity(fav);
                 break;
 
+            case R.id.carspagebutton:
+                Intent cp_btn = new Intent(MainActivity2.this, cars_mainpage.class);
+                startActivity(cp_btn);
+                break;
+
             case R.id.about:
                 Intent abt = new Intent(MainActivity2.this, about.class);
                 startActivity(abt);

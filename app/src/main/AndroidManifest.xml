@@ -49,6 +49,9 @@
         <activity
             android:name=".about"
             android:exported="false" />
+        <activity
+            android:name=".cars_mainpage"
+            android:exported="false" />
     </application>
 
 </manifest>
