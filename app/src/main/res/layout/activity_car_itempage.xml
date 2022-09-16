@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coordinatorlayout">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/customborder"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/carname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Renault Kwid"
+                    android:textColor="@color/black"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17dp"
+                    android:text="by Johns Baby"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:id="@+id/carimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/car1" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/customupperroundborder"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Description"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/description_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/description"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Manufactured in Kerala, India. This Car is a production of Hyundai Corporation"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:id="@+id/price_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/description_txt"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Price: "
+                        android:textColor="@color/black"
+                        android:textSize="19dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/price_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/description_txt"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toRightOf="@+id/price_text"
+                        android:gravity=""
+                        android:text="00.0 Lakh"
+                        android:textColor="@color/black"
+                        android:textSize="19dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/mileage_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/description_txt"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toRightOf="@+id/price_val"
+                        android:gravity=""
+                        android:text="Mileage: "
+                        android:textColor="@color/black"
+                        android:textSize="19dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/mileage_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/description_txt"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toRightOf="@+id/mileage_text"
+                        android:gravity=""
+                        android:text="00 kmpl"
+                        android:textColor="@color/black"
+                        android:textSize="19dp"
+                        android:textStyle="bold" />
+
+
+                    <Button
+                        android:id="@+id/bid_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/price_text"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/roundbutton2"
+                        android:minHeight="45dp"
+                        android:text="  Place Bid   "
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+
+                    <GridLayout
+                        android:id="@+id/gridlay_in_snst1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bid_btn"
+                        android:columnCount="2"
+                        android:rowCount="2">
+
+                        <RelativeLayout>
+
+                            <Button
+                                android:id="@+id/more_details_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_row="0"
+                                android:layout_column="0"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/roundbutton2"
+                                android:minHeight="45dp"
+                                android:text="  View More details   "
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/sharebtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_row="1"
+                                android:layout_column="0"
+                                android:layout_below="@+id/more_details_btn"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/roundbutton2"
+                                android:minHeight="45dp"
+                                android:paddingLeft="25dp"
+                                android:paddingRight="25dp"
+                                android:text="Share via Mail"
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/location_btn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_row="1"
+                                android:layout_column="1"
+                                android:layout_below="@+id/more_details_btn"
+                                android:layout_alignRight="@+id/more_details_btn"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/roundbutton2"
+                                android:minHeight="45dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="View Pickup Location"
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                    </GridLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/gridlay_in_snst1"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Turn on Notification this product"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <ToggleButton
+                            android:id="@+id/toggleButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:background="@drawable/roundbutton"
+                            android:textColor="@color/white"
+                            android:textOff="ON"
+                            android:textOn="OFF"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
