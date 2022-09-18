@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                     } else {
                         Toast toast = new Toast(getApplicationContext());
                         toast.setGravity(Gravity.TOP, 0, 30);
-                        toast.makeText(MainActivity.this, "Incorrect Username/Password! name=" + name + "pswd=" + pswd, toast.LENGTH_SHORT).show();
+                        toast.makeText(MainActivity.this, "Username & Password doesn't Match! Name=" + name + "  Pswd=" + pswd, toast.LENGTH_SHORT).show();
                     }
                 }
             }
