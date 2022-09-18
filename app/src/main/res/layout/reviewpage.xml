@@ -78,8 +78,8 @@
             <Spinner
                 android:layout_width="300dp"
                 android:layout_height="50dp"
-                android:layout_marginLeft="20dp"
                 android:layout_below="@+id/problemfaced"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:background="@color/white"
                 android:entries="@array/spinn"
