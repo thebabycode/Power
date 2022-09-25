@@ -6,6 +6,7 @@ import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
 import android.annotation.SuppressLint;
+import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.ActivityNotFoundException;
@@ -60,6 +61,8 @@ public class activity_snst1_page extends AppCompatActivity {
                                 builder.setSmallIcon(R.drawable.iconimage);
                                 builder.setLargeIcon(BitmapFactory. decodeResource (getResources() , R.drawable.logoimage )) ;
                                 builder.setAutoCancel(true);
+                                builder.setStyle(new NotificationCompat.BigTextStyle().bigText("Hurrah a new Bid has been Placed. Congrats and Good Luck! heheheheheheheheh"));
+
 
                                 NotificationManagerCompat managerCompat = NotificationManagerCompat.from(activity_snst1_page.this);
                                 managerCompat.notify(2, builder.build());
