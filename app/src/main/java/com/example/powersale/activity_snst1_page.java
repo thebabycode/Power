@@ -10,6 +10,7 @@ import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
@@ -57,6 +58,7 @@ public class activity_snst1_page extends AppCompatActivity {
                                 builder.setContentTitle("Bid Placed!");
                                 builder.setContentText("Hurrah a new Bid has been Placed. Congrats and Good Luck!");
                                 builder.setSmallIcon(R.drawable.iconimage);
+                                builder.setLargeIcon(BitmapFactory. decodeResource (getResources() , R.drawable.logoimage )) ;
                                 builder.setAutoCancel(true);
 
                                 NotificationManagerCompat managerCompat = NotificationManagerCompat.from(activity_snst1_page.this);
