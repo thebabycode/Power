@@ -2,12 +2,17 @@ package com.example.powersale;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 
 import android.annotation.SuppressLint;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -30,6 +35,13 @@ public class activity_snst1_page extends AppCompatActivity {
         Button more_details_btn = findViewById(R.id.more_details_btn);
         Button bid_btn = findViewById(R.id.bid_btn);
 
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+            NotificationChannel channel = new NotificationChannel("bid_place","bid place notification",
+                    NotificationManager.IMPORTANCE_DEFAULT);
+            NotificationManager manager = getSystemService(NotificationManager.class);
+            manager.createNotificationChannel(channel);
+        }
+
         bid_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -40,6 +52,16 @@ public class activity_snst1_page extends AppCompatActivity {
                             @Override
                             public void onClick(View view) {
                                 Toast.makeText(activity_snst1_page.this, "Bid has been Placed!", Toast.LENGTH_SHORT).show();
+
+                                NotificationCompat.Builder builder = new NotificationCompat.Builder(activity_snst1_page.this,"bid_place");
+                                builder.setContentTitle("Bid Placed!");
+                                builder.setContentText("Hurrah a new Bid has been Placed. Congrats and Good Luck!");
+                                builder.setSmallIcon(R.drawable.iconimage);
+                                builder.setAutoCancel(true);
+
+                                NotificationManagerCompat managerCompat = NotificationManagerCompat.from(activity_snst1_page.this);
+                                managerCompat.notify(2, builder.build());
+
                             }
                         })
                         .setActionTextColor(Color.WHITE)
