@@ -75,8 +75,8 @@ public class reviewpage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 NotificationCompat.Builder builder = new NotificationCompat.Builder(reviewpage.this,"review notification");
-                builder.setContentTitle("My Title");
-                builder.setContentText("Hello from Johns");
+                builder.setContentTitle("Review Submitted");
+                builder.setContentText("Thank you for the response, we have recieved your Review!");
                 builder.setSmallIcon(R.drawable.iconimage);
                 builder.setAutoCancel(true);
 
