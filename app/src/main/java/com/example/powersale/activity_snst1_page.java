@@ -63,7 +63,6 @@ public class activity_snst1_page extends AppCompatActivity {
                                 builder.setAutoCancel(true);
                                 builder.setStyle(new NotificationCompat.BigTextStyle().bigText("Hurrah a new Bid has been Placed. Congrats and Good Luck! heheheheheheheheh"));
 
-
                                 NotificationManagerCompat managerCompat = NotificationManagerCompat.from(activity_snst1_page.this);
                                 managerCompat.notify(2, builder.build());
 
