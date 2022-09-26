@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.1stProg">
         <activity
+            android:name=".editprofile"
+            android:exported="false" />
+        <activity
             android:name=".car_itempage"
             android:exported="false" />
         <activity

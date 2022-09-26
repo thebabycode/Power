@@ -57,9 +57,11 @@
         <entry key="..\:/Users/JOHNS BABY/AndroidStudioProjects/Powersale/app/src/main/res/menu/snst1_menu.xml" value="0.17335526315789473" />
         <entry key="..\:/Users/JOHNS BABY/AndroidStudioProjects/Powersale/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.290625" />
         <entry key="..\:/Users/johns/AndroidStudioProjects/Power/app/src/main/res/drawable/customborder.xml" value="0.290625" />
+        <entry key="..\:/Users/johns/AndroidStudioProjects/Power/app/src/main/res/drawable/ic_edit.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/johns/AndroidStudioProjects/Power/app/src/main/res/layout/activity_about.xml" value="0.1793478260869565" />
         <entry key="..\:/Users/johns/AndroidStudioProjects/Power/app/src/main/res/layout/activity_car_itempage.xml" value="0.14375" />
         <entry key="..\:/Users/johns/AndroidStudioProjects/Power/app/src/main/res/layout/activity_cars_mainpage.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/johns/AndroidStudioProjects/Power/app/src/main/res/layout/activity_editprofile.xml" value="0.25" />
         <entry key="..\:/Users/johns/AndroidStudioProjects/Power/app/src/main/res/layout/activity_favourites.xml" value="0.26992753623188404" />
         <entry key="..\:/Users/johns/AndroidStudioProjects/Power/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
         <entry key="..\:/Users/johns/AndroidStudioProjects/Power/app/src/main/res/layout/activity_main2.xml" value="0.25317028985507245" />
@@ -67,7 +69,7 @@
         <entry key="..\:/Users/johns/AndroidStudioProjects/Power/app/src/main/res/layout/fragment_digitalfragment.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/johns/AndroidStudioProjects/Power/app/src/main/res/layout/fragment_oilfragment.xml" value="0.22239583333333332" />
         <entry key="..\:/Users/johns/AndroidStudioProjects/Power/app/src/main/res/layout/fragment_snstfragment.xml" value="0.27447916666666666" />
-        <entry key="..\:/Users/johns/AndroidStudioProjects/Power/app/src/main/res/layout/profilepage.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/johns/AndroidStudioProjects/Power/app/src/main/res/layout/profilepage.xml" value="0.264" />
         <entry key="..\:/Users/johns/AndroidStudioProjects/Power/app/src/main/res/layout/recyclerview_row.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/johns/AndroidStudioProjects/Power/app/src/main/res/layout/reviewpage.xml" value="0.14375" />
         <entry key="..\:/Users/johns/AndroidStudioProjects/Power/app/src/main/res/layout/snst1_page.xml" value="0.26992753623188404" />
