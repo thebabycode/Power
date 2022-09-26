@@ -5,15 +5,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/black">
 
-    <ImageButton
-        android:id="@+id/edit_btn"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:src="@drawable/ic_edit"
-        android:layout_toRightOf="@+id/prfimg"
-        android:layout_marginLeft="-65dp"
-        android:layout_marginTop="15dp"/>
-
     <ImageView
         android:id="@+id/prfimg"
         android:layout_width="match_parent"
@@ -30,11 +21,18 @@
         android:orientation="vertical"
         android:paddingLeft="20dp">
 
+        <ImageButton
+            android:id="@+id/edit_btn"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/ic_edit"
+            android:layout_marginLeft="295dp"
+            android:layout_marginTop="15dp"/>
+
         <TextView
             android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
             android:text="Name : Johns Baby"
             android:textColor="@color/black"
             android:textSize="25dp"

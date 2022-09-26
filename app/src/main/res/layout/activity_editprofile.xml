@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
     tools:context=".editprofile">
 
     <TextView
@@ -13,46 +15,37 @@
         android:text="Update Profile"
         android:textColor="@color/black"
         android:textSize="25dp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="125dp"
-        tools:layout_editor_absoluteY="88dp" />
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/newname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="12"
+        android:layout_marginTop="40dp"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:hint="Name"
         android:textColor="@color/black"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="220dp" />
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/newmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="12"
+        android:layout_marginTop="20dp"
         android:inputType="textEmailAddress"
-        android:text="Email"
+        android:hint="Email"
         android:textColor="@color/black"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="299dp" />
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/save_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Save"
+        android:layout_marginTop="40dp"
         android:textColor="@color/white"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="456dp" />
+        android:textStyle="bold" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
